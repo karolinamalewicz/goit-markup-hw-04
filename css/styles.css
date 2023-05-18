@@ -348,6 +348,7 @@ ul {
 .socials-icon {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 
 /* =============== OUR CLIENTS ================ */
