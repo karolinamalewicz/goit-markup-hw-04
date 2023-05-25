@@ -327,6 +327,7 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  color: AFB1B8;
 }
 
 .socials-link {
@@ -337,12 +338,14 @@ ul {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  color: AFB1B8;
 }
 
 .socials-link:hover,
 .socials-link:focus {
   background-color: var(--blue);
   --color3: var(--white);
+  color: AFB1B8;
 }
 
 .socials-icon {
