@@ -218,6 +218,7 @@ ul {
   margin-bottom: 30px;
   background-color: var(--vlgrey);
   border-radius: 4px;
+  fill: grey;
 }
 
 .our-strengths-icon {
@@ -349,6 +350,7 @@ ul {
   width: 20px;
   height: 20px;
   cursor: pointer;
+  fill: grey;
 }
 
 /* =============== OUR CLIENTS ================ */
@@ -385,6 +387,7 @@ ul {
 .clients-icon {
   width: 106px;
   height: 60px;
+  fill: grey;
 }
 
 /* =============== FOOTER ================ */
@@ -472,6 +475,7 @@ ul {
 .footer-socials-icon {
   width: 20px;
   height: 20px;
+  fill: white;
 }
 
 /* =============== P O R T F O L I O  ================ */
