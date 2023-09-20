@@ -7,20 +7,20 @@
   --dgrey: #2f303a;
   --vdgrey: #212121;
   --black: #000;
-  --blue: #2196f3;
   --header-border: #ececec;
   --clients-border: #afb1b8;
   --greyrgba: rgba(255, 255, 255, 0.6);
   --footer-icon-bckgr: rgba(255, 255, 255, 0.1);
   --main-image-linear-gradient: rgba(47, 48, 58, 0.4);
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
 }
 
 /* =============== GLOBAL CSS ================ */
 
 body {
   margin: 0 auto;
-
-  font-family: "Roboto";
+  font-family: 'Roboto';
   color: var(--vdgrey);
   background-color: var(--lgrey);
 }
@@ -81,8 +81,8 @@ ul {
 .link-grey-footer:hover,
 .link-grey-footer:focus {
   text-decoration: none;
-  color: var(--blue);
-  --color2: var(--blue);
+  color: 4D5AE5;
+  --color2: 404BBF;
   --color5: var(--blue);
 }
 
@@ -100,17 +100,17 @@ ul {
   padding-top: 24px;
   padding-bottom: 25px;
   display: flex;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--blue);
+  color: #4d5ae5;
   text-decoration: none;
 }
 
 .menu-logo-black {
-  color: var(--black);
+  color: #2e2f42;
 }
 
 .menu-logo-white {
@@ -154,15 +154,14 @@ ul {
 /* =============== MAIN TOP ================ */
 
 .main-top {
-  padding: 200px 0;
-
+  padding: 200px;
   background: linear-gradient(
       var(--main-image-linear-gradient),
       var(--main-image-linear-gradient)
     ),
-    url(../images/Img.jpg);
-
+    url(../images/people-office1.jpg);
   background-size: contain;
+  font-family: 'Roboto';
 }
 
 .slogan {
@@ -173,7 +172,7 @@ ul {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
-  text-transform: uppercase;
+  font-family: 'Roboto';
   color: var(--white);
 }
 
@@ -187,7 +186,7 @@ ul {
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--white);
-  background-color: var(--blue);
+  background-color: var(--iris);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: var(--blue);
   border-radius: 4px;
@@ -229,11 +228,11 @@ ul {
 .our-strengths-list-title {
   margin-bottom: 10px;
   margin-top: 0;
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: medium;
+  font-size: 20px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  letter-spacing: 2%;
+  color: #2e2f42;
 }
 
 .our-strengths-list-description {
@@ -334,7 +333,7 @@ ul {
   display: flex;
   width: 44px;
   height: 44px;
-  background-color: var(--white);
+  background-color: var(--iris);
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -342,15 +341,14 @@ ul {
 
 .socials-link:hover,
 .socials-link:focus {
-  background-color: var(--blue);
-  --color3: var(--white);
+  background-color: var(--ocean);
 }
 
 .socials-icon {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  fill: grey;
+  fill: var(--white);
 }
 
 /* =============== OUR CLIENTS ================ */
@@ -373,8 +371,7 @@ ul {
 
 .clients-link:hover,
 .clients-link:focus {
-  border-color: var(--blue);
-  --color3: var(--blue);
+  border-color: var(--ocean);
 }
 
 .our-clients {
@@ -385,16 +382,17 @@ ul {
 }
 
 .clients-icon {
-  width: 106px;
-  height: 60px;
-  fill: grey;
+  width: 168px;
+  height: 88px;
+  fill: #8e8f99;
 }
-
+.clients-icon:focus {
+  color: var(--ocean);
+}
 /* =============== FOOTER ================ */
 
 .footer {
-  background-color: var(--dgrey);
-
+  background-color: #2e2f42;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -420,12 +418,12 @@ ul {
 
 .footer-logo {
   display: flex;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--blue);
+  color: var(--iris);
   text-decoration: none;
 }
 
@@ -443,13 +441,18 @@ ul {
 }
 
 .footer-white {
-  color: var(--white);
+  color: #f4f4fd;
 }
 
 .footer-socials {
   padding-top: 12px;
   display: inline-flex;
   flex-direction: column;
+  font-weight: medium;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  font-family: 'Roboto';
 }
 
 .footer-social-list {
@@ -461,7 +464,7 @@ ul {
   display: flex;
   width: 44px;
   height: 44px;
-  background-color: var(--footer-icon-bckgr);
+  background-color: var(--iris);
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -475,7 +478,7 @@ ul {
 .footer-socials-icon {
   width: 20px;
   height: 20px;
-  fill: white;
+  fill: #f4f4fd;
 }
 
 /* =============== P O R T F O L I O  ================ */
@@ -490,6 +493,7 @@ ul {
   display: flex;
   justify-content: center;
   gap: 8px;
+  color: #4d5ae5;
 }
 
 .portfolio-button {
@@ -499,16 +503,17 @@ ul {
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
-  background-color: var(--vlgrey);
+  background-color: #f4f4fd;
   border-radius: 4px;
   border: 0;
   cursor: pointer;
+  color: #4d5ae5;
 }
 
 .portfolio-button:hover,
 .portfolio-button:focus {
   color: var(--white);
-  background-color: var(--blue);
+  background-color: var(--ocean);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
