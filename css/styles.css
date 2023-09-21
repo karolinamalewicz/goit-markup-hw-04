@@ -3,14 +3,13 @@
   --border-grid: #eee;
   --vlgrey: #f5f4fa;
   --lgrey: #e5e5e5;
-  --grey: #757575;
+  --slate: #434455;
   --dgrey: #2f303a;
   --vdgrey: #212121;
   --black: #000;
   --header-border: #ececec;
   --clients-border: #afb1b8;
-  --greyrgba: rgba(255, 255, 255, 0.6);
-  --footer-icon-bckgr: rgba(255, 255, 255, 0.1);
+  --cloud: #f4f4fd;
   --main-image-linear-gradient: rgba(47, 48, 58, 0.4);
   --iris: #4d5ae5;
   --ocean: #404bbf;
@@ -48,7 +47,7 @@ ul {
 }
 
 .link-grey {
-  color: var(--grey);
+  color: var(--slate);
   text-decoration: none;
 }
 
@@ -77,12 +76,14 @@ ul {
 .link:hover,
 .link:focus,
 .link-grey:hover,
-.link-grey:focus,
+.link-grey:focus {
+  color: #404bbf;
+}
 .link-grey-footer:hover,
 .link-grey-footer:focus {
   text-decoration: none;
-  color: 4D5AE5;
-  --color2: 404BBF;
+  color: #4d5ae5;
+  --color2: #404bbf;
   --color5: var(--blue);
 }
 
@@ -160,17 +161,17 @@ ul {
       var(--main-image-linear-gradient)
     ),
     url(../images/people-office1.jpg);
-  background-size: contain;
+  background-size: cover;
   font-family: 'Roboto';
 }
 
 .slogan {
   margin: 0;
   margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: 2%;
   text-align: center;
   font-family: 'Roboto';
   color: var(--white);
@@ -181,16 +182,17 @@ ul {
   display: block;
   padding: 10px 42px;
   font-size: 16px;
-  font-weight: 700;
   line-height: 1.875;
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--white);
   background-color: var(--iris);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-color: var(--blue);
-  border-radius: 4px;
   cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+}
+.button:hover {
+  background-color: var(--ocean);
 }
 
 .main-center {
@@ -215,9 +217,9 @@ ul {
 .our-strengths-list-icon-container {
   padding: 25px 100px;
   margin-bottom: 30px;
-  background-color: var(--vlgrey);
+  background-color: var(--cloud);
   border-radius: 4px;
-  fill: grey;
+  fill: black;
 }
 
 .our-strengths-icon {
@@ -237,10 +239,11 @@ ul {
 
 .our-strengths-list-description {
   margin: 0;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--grey);
+  font-size: 16px;
+  font-weight: regular;
+  line-height: 24px;
+  letter-spacing: 2%;
+  color: var(--slate);
 }
 
 /* =============== WHAT WE DO ================ */
@@ -367,6 +370,8 @@ ul {
   padding: 16px 32px;
   border: 1px solid var(--clients-border);
   border-radius: 4px;
+  width: 168px;
+  height: 88px;
 }
 
 .clients-link:hover,
@@ -382,12 +387,13 @@ ul {
 }
 
 .clients-icon {
-  width: 168px;
-  height: 88px;
+  width: 104px;
+  height: 56px;
   fill: #8e8f99;
 }
-.clients-icon:focus {
-  color: var(--ocean);
+
+.clients-icon:hover {
+  fill: var(--ocean);
 }
 /* =============== FOOTER ================ */
 
@@ -432,7 +438,7 @@ ul {
   font-style: inherit;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--greyrgba);
+  color: var(--cloud);
 }
 
 .footer-contact a {
@@ -472,7 +478,7 @@ ul {
 
 .footer-socials-link:hover,
 .footer-socials-link:focus {
-  background-color: var(--blue);
+  background-color: #31d0aa;
 }
 
 .footer-socials-icon {
@@ -514,8 +520,6 @@ ul {
 .portfolio-button:focus {
   color: var(--white);
   background-color: var(--ocean);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .flex-container {
@@ -531,6 +535,7 @@ ul {
   margin: 0;
   border-bottom: 1px solid var(--border-grid);
   flex-basis: 370px;
+  cursor: pointer;
 }
 
 .portfolio-item:hover {
